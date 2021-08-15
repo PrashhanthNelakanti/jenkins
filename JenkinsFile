@@ -7,5 +7,21 @@ pipeline {
                 echo 'From GitHub'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'deploy to AWS'
+            }
+        }
+        stage('Test') {
+             steps {
+                 echo 'sonar Tests'
+             }
+         }
+         stage('Deploy PROD') {
+             steps {
+                 echo 'deploy to Production'
+             }
+         }
+
     }
 }
