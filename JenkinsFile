@@ -17,7 +17,7 @@ pipeline {
                  echo 'sonar Tests'
              }
          }
-          stage('Deploy TEST') {
+          stage('Deploy INTG') {
               steps {
                   echo 'deploy to TEST Env'
               }
