@@ -15,7 +15,7 @@ public class Application {
 
 	@GetMapping("/test")
 	public String demo(){
-		return "Sucess";
+		return "Up";
 	}
 
 }
