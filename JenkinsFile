@@ -17,6 +17,11 @@ pipeline {
                  echo 'sonar Tests'
              }
          }
+          stage('Deploy TEST') {
+              steps {
+                  echo 'deploy to TEST Env'
+              }
+          }
          stage('Deploy PROD') {
              steps {
                  echo 'deploy to Production'
